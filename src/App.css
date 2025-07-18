@@ -1,38 +1,87 @@
-.App {
+@font-face {
+  font-family: 'Neue';
+  src: url('../public/fonts/NeueMachina-Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+  background-color: #ab8dff;
+  font-family: Neue;
+}
+
+.app-container{
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2{
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-area{
   display: flex;
-  flex-direction: column;
+  gap:10px;
+  margin-bottom: 20px;
+}
+
+.input-area input{
+  flex:1;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Neue;
+  border-radius: 5px;
+  border:1px solid #ccc;
+}
+
+.input-area button{
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color:white;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: Neue;
+  cursor: pointer;
+}
+
+.note-list{
+  list-style: none;
+  padding: 0;
+}
+
+.note-item{
+  background: #c7c7c7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.note-item span{
+  flex: 1;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-item button{
+  margin-left: 12px;
+  padding: 12px 18px;
+  border:none;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.2s;
+  
+}
+.note-item button:hover{
+   box-shadow: 2px 2px 0 black;
 }

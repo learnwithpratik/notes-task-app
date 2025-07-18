@@ -1,0 +1,16 @@
+1. First make a folder called backend in your project directory.
+2. In this backend folder, execute the following command
+    -> npm init -y
+    -> npm install express mongoose cors
+
+3. code make a server.js file and write the server (api code) and connection to database code in this.
+
+4. After doing this, come back to the root folder (i.e your project folder)
+    - here, make a client folder
+5.  and here in the client oflder, run the command,
+    -> npx create-react-app {your project name} (let it install)
+    -> then, execute the following command, npm install axios
+
+6. here in the client folder, after running the upper commands, you will see the project folder structure with node_modules and all of it.
+    
+7. here, do as shown in the file.    
