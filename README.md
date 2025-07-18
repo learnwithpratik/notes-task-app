@@ -16,4 +16,4 @@ A simple CRUD-based notes app built with:
 ```bash
 cd server
 npm install
-node index.js
+node server.js
